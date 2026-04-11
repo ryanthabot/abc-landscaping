@@ -76,9 +76,9 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="Landscape Designs Ontario"
-              width={200}
-              height={44}
-              className="h-14 w-auto sm:h-16"
+              width={280}
+              height={62}
+              className="h-12 w-auto sm:h-16"
               priority
               suppressHydrationWarning
             />
@@ -166,9 +166,9 @@ export default function Header() {
                   <Image
                     src="/images/logo.png"
                     alt="Landscape Designs Ontario"
-                    width={180}
-                    height={40}
-                    className="h-12 w-auto"
+                    width={220}
+                    height={48}
+                    className="h-11 w-auto"
                     suppressHydrationWarning
                   />
                   <button
