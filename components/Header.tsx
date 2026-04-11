@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { Menu, X, Sun, Moon, Phone } from 'lucide-react';
 import { navLinks, businessInfo } from '@/lib/data';
 import { useTheme } from './ThemeProvider';
@@ -72,15 +73,15 @@ export default function Header() {
             transition={{ duration: 0.4, type: 'spring', stiffness: 100 }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow hidden sm:flex">
-              <span className="text-primary-foreground font-bold text-lg font-heading">LDO</span>
-            </div>
-            <div className="flex items-baseline gap-1">
-              <span className="font-heading font-bold text-lg text-foreground leading-tight">
-                Landscape Designs
-              </span>
-              <span className="text-sm text-muted-foreground font-accent">Ontario</span>
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Landscape Designs Ontario"
+              width={200}
+              height={44}
+              className="h-14 w-auto sm:h-16"
+              priority
+              suppressHydrationWarning
+            />
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -162,15 +163,14 @@ export default function Header() {
               {/* Mobile menu header */}
               <div className="p-6 border-b border-border">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-primary rounded-2xl flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">LDO</span>
-                    </div>
-                    <div className="flex flex-col leading-tight">
-                      <span className="font-heading font-bold text-foreground">Landscape Designs</span>
-                      <span className="text-sm text-muted-foreground font-accent">Ontario</span>
-                    </div>
-                  </div>
+                  <Image
+                    src="/images/logo.png"
+                    alt="Landscape Designs Ontario"
+                    width={180}
+                    height={40}
+                    className="h-12 w-auto"
+                    suppressHydrationWarning
+                  />
                   <button
                     className="w-9 h-9 rounded-full bg-muted flex items-center justify-center"
                     onClick={() => setIsMobileMenuOpen(false)}

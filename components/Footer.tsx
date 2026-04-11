@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Phone, Mail, MapPin, TreePine } from 'lucide-react';
 import { businessInfo, services, serviceAreas } from '@/lib/data';
 
@@ -13,13 +14,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-sm">LDO</span>
-              </div>
-              <div className="flex items-baseline gap-1.5">
-                <p className="font-heading font-bold text-foreground leading-tight">Landscape Designs</p>
-                <p className="font-accent text-sm text-muted-foreground">Ontario</p>
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="Landscape Designs Ontario"
+                width={200}
+                height={44}
+                className="h-14 w-auto"
+                suppressHydrationWarning
+              />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               Transforming outdoor spaces across the Durham Region and GTA with expert interlocking, retaining walls, and excavation.
