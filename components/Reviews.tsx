@@ -1,11 +1,26 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Star, X, ImageIcon } from 'lucide-react';
 import { reviews } from '@/lib/data';
 
 export default function Reviews() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxSrc, setLightboxSrc] = useState('');
+  const [lightboxName, setLightboxName] = useState('');
+
+  const openLightbox = (src: string, name: string) => {
+    setLightboxSrc(src);
+    setLightboxName(name);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
   return (
     <section id="reviews" className="relative py-24">
       {/* Decorative elements */}
@@ -41,39 +56,11 @@ export default function Reviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, type: 'spring', stiffness: 80 }}
-              className="bg-background rounded-3xl p-8 shadow-sm border border-primary/5 hover:shadow-lg hover:border-primary/10 transition-all duration-300 relative"
+              className="bg-background rounded-3xl p-8 shadow-sm border border-primary/5 hover:shadow-lg hover:border-primary/10 transition-all duration-300 flex flex-col"
             >
-              {/* Quote icon */}
-              <Quote className="w-8 h-8 text-primary/10 absolute top-6 right-6" />
-
-              {/* Review image */}
-              {review.image && (
-                <div className="relative w-full h-20 mb-4 rounded-xl overflow-hidden">
-                  <Image
-                    src={review.image}
-                    alt={`Review from ${review.clientName}`}
-                    fill
-                    className="object-cover"
-                    suppressHydrationWarning
-                  />
-                </div>
-              )}
-
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: review.rating }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-
-              {/* Text */}
-              <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                &ldquo;{review.body}&rdquo;
-              </p>
-
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <span className="text-primary font-heading font-bold text-sm">
                     {review.clientName.charAt(0)}
                   </span>
@@ -83,6 +70,29 @@ export default function Reviews() {
                   <p className="text-xs text-muted-foreground">{review.clientCity}</p>
                 </div>
               </div>
+
+              {/* Stars */}
+              <div className="flex gap-0.5 mb-4">
+                {Array.from({ length: review.rating }).map((_, j) => (
+                  <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+
+              {/* Text */}
+              <p className="text-muted-foreground leading-relaxed mb-6 text-sm flex-1">
+                &ldquo;{review.body}&rdquo;
+              </p>
+
+              {/* View Image Button */}
+              {review.image && (
+                <button
+                  onClick={() => openLightbox(review.image!, review.clientName)}
+                  className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline transition-colors self-start cursor-pointer"
+                >
+                  <ImageIcon className="w-4 h-4" />
+                  View Image
+                </button>
+              )}
             </motion.div>
           ))}
         </div>
@@ -109,6 +119,56 @@ export default function Reviews() {
           </a>
         </motion.div>
       </div>
+
+      {/* Image Lightbox */}
+      <AnimatePresence>
+        {lightboxOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+            onClick={closeLightbox}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="relative bg-background rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close button */}
+              <button
+                onClick={closeLightbox}
+                className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors cursor-pointer"
+                aria-label="Close image"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              {/* Image */}
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src={lightboxSrc}
+                  alt={`Review from ${lightboxName}`}
+                  fill
+                  className="object-contain"
+                  suppressHydrationWarning
+                />
+              </div>
+
+              {/* Caption */}
+              <div className="px-4 py-3 text-center">
+                <p className="text-sm text-muted-foreground">
+                  Google Review — <span className="font-semibold text-foreground">{lightboxName}</span>
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
