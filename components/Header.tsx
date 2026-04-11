@@ -72,10 +72,10 @@ export default function Header() {
             transition={{ duration: 0.4, type: 'spring', stiffness: 100 }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+            <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow hidden sm:flex">
               <span className="text-primary-foreground font-bold text-lg font-heading">LDO</span>
             </div>
-            <div className="hidden sm:flex items-baseline gap-1.5">
+            <div className="flex items-baseline gap-1">
               <span className="font-heading font-bold text-lg text-foreground leading-tight">
                 Landscape Designs
               </span>
@@ -166,7 +166,7 @@ export default function Header() {
                     <div className="w-10 h-10 bg-primary rounded-2xl flex items-center justify-center">
                       <span className="text-primary-foreground font-bold">LDO</span>
                     </div>
-                    <div className="flex items-baseline gap-1.5">
+                    <div className="flex flex-col leading-tight">
                       <span className="font-heading font-bold text-foreground">Landscape Designs</span>
                       <span className="text-sm text-muted-foreground font-accent">Ontario</span>
                     </div>
