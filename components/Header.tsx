@@ -78,7 +78,7 @@ export default function Header() {
               alt="Landscape Designs Ontario"
               width={56}
               height={56}
-              className="h-10 w-auto sm:h-11"
+              className="hidden sm:block h-11 w-auto"
               priority
               suppressHydrationWarning
             />
