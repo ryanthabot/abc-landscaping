@@ -13,8 +13,8 @@ export default function Hero() {
 
       {/* Floating organic blobs */}
       <div className="absolute top-20 -left-20 w-80 h-80 bg-primary/10 animate-blob-morph opacity-60" />
-      <div className="absolute bottom-20 -right-20 w-96 h-96 bg-accent/10 animate-blob-morph opacity-50" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/5 animate-blob-morph opacity-40" style={{ animationDelay: '4s' }} />
+      <div className="absolute bottom-20 -right-20 w-96 h-96 bg-accent/10 animate-blob-morph-2 opacity-50" />
+      <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/5 animate-blob-morph-4 opacity-40" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-12 pb-20">
@@ -116,6 +116,7 @@ export default function Hero() {
                   fill
                   className="object-cover"
                   priority
+                  suppressHydrationWarning
                 />
               </div>
 

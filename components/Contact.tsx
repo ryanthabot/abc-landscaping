@@ -72,7 +72,7 @@ export default function Contact() {
               <Clock className="w-6 h-6 text-primary" />
             </div>
             <h3 className="font-heading font-bold text-foreground mb-1">Hours</h3>
-            <p className="text-muted-foreground text-sm">Mon–Sat: 7am–7pm</p>
+            <p className="text-muted-foreground text-sm">Mon–Sat: 8am–6pm</p>
             <p className="text-muted-foreground text-sm">Sun: Closed</p>
           </motion.div>
         </div>

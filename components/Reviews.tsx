@@ -9,7 +9,7 @@ export default function Reviews() {
     <section id="reviews" className="relative py-24">
       {/* Decorative elements */}
       <div className="absolute top-20 left-5 w-24 h-24 rounded-full bg-primary/5 animate-gentle-float" />
-      <div className="absolute bottom-20 right-5 w-20 h-20 rounded-full bg-accent/5 animate-gentle-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute bottom-20 right-5 w-20 h-20 rounded-full bg-accent/5 animate-gentle-float-delayed" />
 
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -85,7 +85,7 @@ export default function Reviews() {
             See all our reviews on Google
           </p>
           <a
-            href="https://www.google.com/maps/place/Landscape+Designs+Ontario"
+            href="https://www.google.com/search?sca_esv=a8a2e81bb91c1c6f&sxsrf=ANbL-n6YCmCnIRsK3ihiniALJj16thiKCQ:1775934297755&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOW47iR6vWc7jz24jbuZMjKM9s2QfKbofCRCwXopJvNt4OtjsDuxyRbqf0C1GfM6RezfXbBLUdYe6HGGqMUs2OchCiO_NJ7cL3GepmrpZkfiAptecFg%3D%3D&q=Landscape+Designs+Ontario+Reviews&sa=X&ved=2ahUKEwiT-9jnvuaTAxWSiCsGHXV-CWAQ0bkNegQIORAH&biw=2296&bih=1164&dpr=1.25"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-primary/20 text-primary font-heading font-semibold px-6 py-3 rounded-2xl hover:bg-primary hover:text-primary-foreground transition-colors"

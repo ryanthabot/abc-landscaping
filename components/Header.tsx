@@ -75,11 +75,11 @@ export default function Header() {
             <div className="w-11 h-11 bg-primary rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
               <span className="text-primary-foreground font-bold text-lg font-heading">LDO</span>
             </div>
-            <div className="hidden sm:block">
-              <span className="font-heading font-bold text-lg text-foreground block leading-tight">
+            <div className="hidden sm:flex items-baseline gap-1.5">
+              <span className="font-heading font-bold text-lg text-foreground leading-tight">
                 Landscape Designs
               </span>
-              <span className="text-xs text-muted-foreground font-accent">Ontario</span>
+              <span className="text-sm text-muted-foreground font-accent">Ontario</span>
             </div>
           </motion.a>
 
@@ -166,9 +166,9 @@ export default function Header() {
                     <div className="w-10 h-10 bg-primary rounded-2xl flex items-center justify-center">
                       <span className="text-primary-foreground font-bold">LDO</span>
                     </div>
-                    <div>
-                      <span className="font-heading font-bold text-foreground block">Landscape Designs</span>
-                      <span className="text-xs text-muted-foreground font-accent">Ontario</span>
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="font-heading font-bold text-foreground">Landscape Designs</span>
+                      <span className="text-sm text-muted-foreground font-accent">Ontario</span>
                     </div>
                   </div>
                   <button

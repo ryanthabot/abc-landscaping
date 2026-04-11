@@ -55,6 +55,7 @@ export default function ServicesGrid() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    suppressHydrationWarning
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-4 left-4">
@@ -109,9 +110,11 @@ export default function ServicesGrid() {
                 fill
                 className="object-cover rounded-t-3xl"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                suppressHydrationWarning
               />
               <button
                 onClick={() => setExpandedService(null)}
+                aria-label="Close modal"
                 className="absolute top-4 right-4 bg-black/50 text-white rounded-full p-2 hover:bg-black/70 transition-colors"
               >
                 <X className="w-5 h-5" />
@@ -119,7 +122,7 @@ export default function ServicesGrid() {
             </div>
 
             {/* Modal Content */}
-            <div className="p-8">
+            <div className="p-8 text-center">
               <h3 className="font-heading font-bold text-2xl text-foreground mb-2">
                 {expanded.title}
               </h3>
@@ -129,7 +132,7 @@ export default function ServicesGrid() {
               </p>
 
               <h4 className="font-heading font-semibold text-foreground mb-3">What&apos;s Included:</h4>
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2 mb-8 inline-block text-left">
                 {expanded.items.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -138,13 +141,15 @@ export default function ServicesGrid() {
                 ))}
               </ul>
 
-              <a
-                href="#contact"
-                onClick={() => setExpandedService(null)}
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading font-semibold px-6 py-3 rounded-2xl hover:bg-primary/90 transition-colors"
-              >
-                Get a Free Quote <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="flex justify-center">
+                <a
+                  href="#contact"
+                  onClick={() => setExpandedService(null)}
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading font-semibold px-6 py-3 rounded-2xl hover:bg-primary/90 transition-colors"
+                >
+                  Get a Free Quote <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </motion.div>
         </motion.div>

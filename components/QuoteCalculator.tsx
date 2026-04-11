@@ -135,6 +135,7 @@ export default function QuoteCalculator() {
                     <label className="block text-sm font-medium text-foreground mb-1.5">Service Needed</label>
                     <select
                       required
+                      aria-label="Service needed"
                       className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                     >
                       <option value="">Select a service...</option>
@@ -147,6 +148,7 @@ export default function QuoteCalculator() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">Your Location</label>
                     <select
+                      aria-label="Your location"
                       className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                     >
                       <option value="">Select your area...</option>

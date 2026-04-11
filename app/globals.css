@@ -191,12 +191,24 @@ html {
   animation: gentle-float 6s ease-in-out infinite;
 }
 
+.animate-gentle-float-delayed {
+  animation: gentle-float 6s ease-in-out 3s infinite;
+}
+
 .animate-warm-pulse {
   animation: warm-pulse 4s ease-in-out infinite;
 }
 
 .animate-blob-morph {
   animation: blob-morph 8s ease-in-out infinite;
+}
+
+.animate-blob-morph-2 {
+  animation: blob-morph 8s ease-in-out 2s infinite;
+}
+
+.animate-blob-morph-4 {
+  animation: blob-morph 8s ease-in-out 4s infinite;
 }
 
 .animate-soft-reveal {

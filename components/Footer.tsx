@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground/[0.03] border-t border-primary/5">
+    <footer className="bg-foreground/3 border-t border-primary/5">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -16,9 +16,9 @@ export default function Footer() {
               <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
                 <span className="text-primary-foreground font-heading font-bold text-sm">LDO</span>
               </div>
-              <div>
+              <div className="flex items-baseline gap-1.5">
                 <p className="font-heading font-bold text-foreground leading-tight">Landscape Designs</p>
-                <p className="font-heading text-xs text-muted-foreground">Ontario</p>
+                <p className="font-accent text-sm text-muted-foreground">Ontario</p>
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -53,7 +53,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-foreground mb-4">Service Areas</h4>
             <ul className="space-y-2">
-              <li className="text-muted-foreground text-sm font-medium text-primary">Bowmanville</li>
+              <li className="text-sm font-medium text-primary">Bowmanville</li>
               {serviceAreas.durham.slice(0, 4).map((area) => (
                 <li key={area} className="text-muted-foreground text-sm">{area}</li>
               ))}
@@ -78,7 +78,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground text-sm">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                 <span>Serving Durham Region &amp; GTA, Ontario</span>
               </li>
             </ul>

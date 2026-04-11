@@ -10,7 +10,7 @@ export default function About() {
     {
       icon: TreePine,
       title: 'Local Expertise',
-      description: 'Born and raised in Ontario, we know the land and the climate.',
+      description: 'Deep knowledge of Durham Region soil, drainage, and seasonal conditions.',
     },
     {
       icon: Award,
@@ -52,6 +52,7 @@ export default function About() {
                   alt="Jerome - Landscape Designs Ontario owner and operator"
                   fill
                   className="object-cover"
+                  suppressHydrationWarning
                 />
               </div>
 

@@ -53,6 +53,7 @@ export default function Gallery() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes={i === 0 || i === 5 ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 50vw, 25vw'}
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -94,6 +95,7 @@ export default function Gallery() {
                 fill
                 className="object-contain"
                 sizes="100vw"
+                suppressHydrationWarning
               />
             </motion.div>
           </motion.div>

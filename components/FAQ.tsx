@@ -57,7 +57,7 @@ export default function FAQ() {
                   >
                     <div className="flex items-center gap-3 pr-4">
                       <div
-                        className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${
+                        className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
                           isOpen ? 'bg-primary text-white' : 'bg-secondary text-muted-foreground'
                         }`}
                       >
@@ -68,7 +68,7 @@ export default function FAQ() {
                       </span>
                     </div>
                     <ChevronDown
-                      className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform duration-300 ${
+                      className={`w-5 h-5 text-muted-foreground shrink-0 transition-transform duration-300 ${
                         isOpen ? 'rotate-180' : ''
                       }`}
                     />
