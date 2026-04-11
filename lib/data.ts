@@ -194,42 +194,45 @@ export const faqs = [
   },
 ];
 
-// Placeholder reviews — REPLACE with your real Google reviews
+// Real Google reviews
 export const reviews = [
   {
     id: '1',
-    clientName: 'Mike R.',
-    clientCity: 'Bowmanville',
+    clientName: 'Katherine Hobson',
+    clientCity: 'Google Review',
     rating: 5,
-    body: 'Jerome and his team completely transformed our driveway with beautiful interlocking stone. The attention to detail was incredible and they finished ahead of schedule. Our neighbours keep stopping to compliment the work!',
+    body: "Jerome and his team helped me install a gorgeous flagstone pad - it's not their usual style, but they followed my reference photos perfectly and I'm so pleased with the results. Incredibly efficient and hardworking, the project was finished much sooner than I expected! Would definitely recommend them, will definitely use them again.",
+    image: '/images/review1.png',
   },
   {
     id: '2',
-    clientName: 'Sarah & David P.',
-    clientCity: 'Courtice',
+    clientName: 'Paul Williamson',
+    clientCity: 'Google Review',
     rating: 5,
-    body: 'We needed a large retaining wall in our backyard and Landscape Designs Ontario delivered beyond our expectations. Professional, reliable, and the final result is absolutely stunning. Highly recommend Jerome!',
+    body: "Landscape designs did a fantastic job. Very professional, help guide us through the design process and recommend great products. Jerome and his staff work very hard to ensure the job is done well and correct. We added some things through the project and they were happy to accommodate. You don't find many companies like this anymore, this was truly a great experience for us. We are very pleased and have recommended Jerome to a few friends that are very happy as well. They also cleaned up every night before they left. What a great experience thanks!",
+    image: '/images/review2.png',
   },
   {
     id: '3',
-    clientName: 'Jennifer M.',
-    clientCity: 'Oshawa',
+    clientName: 'Christine Ling',
+    clientCity: 'Google Review',
     rating: 5,
-    body: 'From the first consultation to the final walkthrough, everything was seamless. Jerome explained every step clearly and the crew was respectful of our property. The new patio is our favourite part of the house now.',
+    body: 'We had these guys out to reseal and fix our interlock. They were very quick to respond and honest. I highly recommend them for any of your landscaping needs.',
+    image: '/images/review3.png',
   },
   {
     id: '4',
-    clientName: 'Tom & Lisa K.',
-    clientCity: 'Whitby',
+    clientName: 'Jenn Corriveau',
+    clientCity: 'Google Review',
     rating: 5,
-    body: 'We had excavation done for our new pool and the team was fantastic. They showed up on time, worked efficiently, and left the site spotless. Fair pricing and honest communication throughout the entire project.',
+    body: 'Absolutely an amazing company all around!!! Fast, efficient, and friendly. Truly the whole package. From our first phone contact to the completion of our job was less than 32 hours. Highly recommend this company for all your landscaping needs. Big and small.',
   },
   {
     id: '5',
-    clientName: 'Robert H.',
-    clientCity: 'Pickering',
+    clientName: 'Andrew Dalton',
+    clientCity: 'Google Review',
     rating: 5,
-    body: 'Second time using Landscape Designs Ontario — first for a walkway, then for a complete backyard transformation. Jerome is a true professional who takes pride in his work. Would not hesitate to recommend to anyone.',
+    body: 'Did an absolute amazing job on building my wall, driveway and stairs, helped create the vision we had. Workers were polite, punctual and nothing was too much trouble for them. I would highly recommend this company.',
   },
 ];
 

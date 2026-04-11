@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 import { reviews } from '@/lib/data';
@@ -44,6 +45,19 @@ export default function Reviews() {
             >
               {/* Quote icon */}
               <Quote className="w-8 h-8 text-primary/10 absolute top-6 right-6" />
+
+              {/* Review image */}
+              {review.image && (
+                <div className="relative w-full h-20 mb-4 rounded-xl overflow-hidden">
+                  <Image
+                    src={review.image}
+                    alt={`Review from ${review.clientName}`}
+                    fill
+                    className="object-cover"
+                    suppressHydrationWarning
+                  />
+                </div>
+              )}
 
               {/* Stars */}
               <div className="flex gap-1 mb-4">
