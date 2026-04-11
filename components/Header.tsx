@@ -76,12 +76,18 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="Landscape Designs Ontario"
-              width={280}
-              height={62}
-              className="h-12 w-auto sm:h-16"
+              width={56}
+              height={56}
+              className="h-10 w-auto sm:h-11"
               priority
               suppressHydrationWarning
             />
+            <div className="flex items-baseline gap-1">
+              <span className="font-heading font-bold text-lg text-foreground leading-tight">
+                Landscape Designs
+              </span>
+              <span className="text-sm text-muted-foreground font-accent">Ontario</span>
+            </div>
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -163,14 +169,20 @@ export default function Header() {
               {/* Mobile menu header */}
               <div className="p-6 border-b border-border">
                 <div className="flex items-center justify-between mb-4">
-                  <Image
-                    src="/images/logo.png"
-                    alt="Landscape Designs Ontario"
-                    width={220}
-                    height={48}
-                    className="h-11 w-auto"
-                    suppressHydrationWarning
-                  />
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src="/images/logo.png"
+                      alt="Landscape Designs Ontario"
+                      width={40}
+                      height={40}
+                      className="h-10 w-auto"
+                      suppressHydrationWarning
+                    />
+                    <div className="flex flex-col leading-tight">
+                      <span className="font-heading font-bold text-foreground">Landscape Designs</span>
+                      <span className="text-sm text-muted-foreground font-accent">Ontario</span>
+                    </div>
+                  </div>
                   <button
                     className="w-9 h-9 rounded-full bg-muted flex items-center justify-center"
                     onClick={() => setIsMobileMenuOpen(false)}
