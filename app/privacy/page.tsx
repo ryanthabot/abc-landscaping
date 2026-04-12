@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><strong className="text-foreground">Resend</strong> — Used to deliver contact form submissions to our email and send confirmation emails. Resend processes email delivery but does not store or use your personal information for any other purpose.</li>
-              <li><strong className="text-foreground">Vercel / Cloudflare</strong> — Our website hosting providers. They may collect standard server logs (IP address, browser type) necessary to serve web pages, but we do not use this data for tracking or profiling.</li>
+              <li><strong className="text-foreground">Cloudflare</strong> — Our website hosting provider. They may collect standard server logs (IP address, browser type) necessary to serve web pages, but we do not use this data for tracking or profiling.</li>
             </ul>
             <p className="mt-4">
               These services have their own privacy policies governing their data practices.
