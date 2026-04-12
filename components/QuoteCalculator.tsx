@@ -2,16 +2,55 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Phone, Mail, MapPin, CheckCircle } from 'lucide-react';
+import { Send, Phone, Mail, MapPin, CheckCircle, Loader2 } from 'lucide-react';
 import { services, allServiceAreas } from '@/lib/data';
 
 export default function QuoteCalculator() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    service: '',
+    location: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Something went wrong');
+      }
+
+      setSubmitted(true);
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Failed to send. Please try again or call us directly.';
+      setError(message);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const inputClass = 'w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors';
 
   return (
     <section id="contact" className="relative py-24 bg-primary/5">
@@ -96,8 +135,11 @@ export default function QuoteCalculator() {
                       <label className="block text-sm font-medium text-foreground mb-1.5">First Name</label>
                       <input
                         type="text"
+                        name="firstName"
+                        value={form.firstName}
+                        onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                        className={inputClass}
                         placeholder="John"
                       />
                     </div>
@@ -105,8 +147,11 @@ export default function QuoteCalculator() {
                       <label className="block text-sm font-medium text-foreground mb-1.5">Last Name</label>
                       <input
                         type="text"
+                        name="lastName"
+                        value={form.lastName}
+                        onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                        className={inputClass}
                         placeholder="Doe"
                       />
                     </div>
@@ -116,8 +161,11 @@ export default function QuoteCalculator() {
                     <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
                     <input
                       type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                      className={inputClass}
                       placeholder="john@example.com"
                     />
                   </div>
@@ -126,7 +174,10 @@ export default function QuoteCalculator() {
                     <label className="block text-sm font-medium text-foreground mb-1.5">Phone</label>
                     <input
                       type="tel"
-                      className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                      name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
+                      className={inputClass}
                       placeholder="(705) 555-0000"
                     />
                   </div>
@@ -134,13 +185,16 @@ export default function QuoteCalculator() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">Service Needed</label>
                     <select
+                      name="service"
+                      value={form.service}
+                      onChange={handleChange}
                       required
                       aria-label="Service needed"
-                      className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                      className={inputClass}
                     >
                       <option value="">Select a service...</option>
                       {services.map((s) => (
-                        <option key={s.id} value={s.id}>{s.title}</option>
+                        <option key={s.id} value={s.title}>{s.title}</option>
                       ))}
                     </select>
                   </div>
@@ -148,8 +202,11 @@ export default function QuoteCalculator() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">Your Location</label>
                     <select
+                      name="location"
+                      value={form.location}
+                      onChange={handleChange}
                       aria-label="Your location"
-                      className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                      className={inputClass}
                     >
                       <option value="">Select your area...</option>
                       {allServiceAreas.map((area) => (
@@ -161,20 +218,37 @@ export default function QuoteCalculator() {
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-1.5">Tell Us About Your Project</label>
                     <textarea
+                      name="message"
+                      value={form.message}
+                      onChange={handleChange}
                       rows={4}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
+                      className={`${inputClass} resize-none`}
                       placeholder="Describe your project — type of work, approximate size, timeline, etc."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground font-heading font-semibold py-4 rounded-2xl hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
+                    disabled={submitting}
+                    className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground font-heading font-semibold py-4 rounded-2xl hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <Send className="w-4 h-4" />
-                    Send Request
+                    {submitting ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" />
+                        Send Request
+                      </>
+                    )}
                   </button>
+
+                  {error && (
+                    <p className="text-sm text-red-500 text-center">{error}</p>
+                  )}
 
                   <p className="text-xs text-muted-foreground text-center">
                     We&apos;ll respond within 24 hours. No spam, ever.
@@ -197,7 +271,10 @@ export default function QuoteCalculator() {
                     Jerome will be in touch within 24 hours.
                   </p>
                   <button
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setForm({ firstName: '', lastName: '', email: '', phone: '', service: '', location: '', message: '' });
+                    }}
                     className="text-primary font-heading font-semibold text-sm hover:underline"
                   >
                     Send another request
