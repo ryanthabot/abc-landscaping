@@ -74,6 +74,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
+      replyTo: 'landscapedesignsontario@gmail.com',
       subject: 'Thanks for reaching out! — Landscape Designs Ontario',
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a;">
