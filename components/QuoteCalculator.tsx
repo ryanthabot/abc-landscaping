@@ -267,8 +267,11 @@ export default function QuoteCalculator() {
                   <h3 className="font-heading font-bold text-2xl text-foreground mb-2">
                     Request Sent!
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-muted-foreground mb-2">
                     Jerome will be in touch within 24 hours.
+                  </p>
+                  <p className="text-sm text-muted-foreground/70 mb-6">
+                    💡 Please check your spam/junk folder if you don&apos;t see our confirmation email.
                   </p>
                   <button
                     onClick={() => {

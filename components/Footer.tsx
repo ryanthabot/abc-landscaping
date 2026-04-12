@@ -104,6 +104,9 @@ export default function Footer() {
             <a href="#contact" className="text-muted-foreground text-sm hover:text-primary transition-colors">
               Contact
             </a>
+            <a href="/privacy" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
