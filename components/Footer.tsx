@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <a href={`tel:${businessInfo.phone}`} className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Phone className="w-4 h-4 text-primary" />
-                  (343) 333-0580
+                  (343) 580-0908
                 </a>
               </li>
               <li>

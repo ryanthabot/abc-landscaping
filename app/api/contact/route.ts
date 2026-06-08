@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
               </ol>
             </div>
             <p style="font-size: 16px; line-height: 1.6;">
-              In the meantime, feel free to call or text Karter directly at <a href="tel:3433330580" style="color: #16a34a; font-weight: 600;">(343) 333-0580</a>.
+              In the meantime, feel free to call or text Karter directly at <a href="tel:3435800908" style="color: #16a34a; font-weight: 600;">(343) 580-0908</a>.
             </p>
             <p style="color: #6b7280; margin-top: 24px;">
               Best regards,<br>

@@ -78,13 +78,13 @@ export default function QuoteCalculator() {
 
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
-              <a href="tel:3433330580" className="flex items-center gap-4 group">
+              <a href="tel:3435800908" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Call or Text</p>
-                  <p className="font-heading font-semibold text-foreground">(343) 333-0580</p>
+                  <p className="font-heading font-semibold text-foreground">(343) 580-0908</p>
                 </div>
               </a>
 

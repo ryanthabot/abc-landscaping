@@ -140,8 +140,8 @@ export default function PrivacyPolicy() {
                 karter@abclandscaping.xyz
               </a>{' '}
               or call{' '}
-              <a href="tel:3433330580" className="text-primary hover:underline font-medium">
-                (343) 333-0580
+              <a href="tel:3435800908" className="text-primary hover:underline font-medium">
+                (343) 580-0908
               </a>.
             </p>
           </section>
@@ -182,8 +182,8 @@ export default function PrivacyPolicy() {
               </p>
               <p className="text-muted-foreground">
                 Phone:{' '}
-                <a href="tel:3433330580" className="text-primary hover:underline">
-                  (343) 333-0580
+                <a href="tel:3435800908" className="text-primary hover:underline">
+                  (343) 580-0908
                 </a>
               </p>
               <p className="text-muted-foreground">Serving Durham Region &amp; GTA, Ontario</p>

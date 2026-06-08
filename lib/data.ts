@@ -190,7 +190,7 @@ export const faqs = [
     id: '10',
     question: 'How do I get started?',
     answer:
-      'Simply give us a call at 343-333-0580 or fill out the contact form on this page. Karter will get back to you promptly to schedule a free on-site consultation at your convenience.',
+      'Simply give us a call at 343-580-0908 or fill out the contact form on this page. Karter will get back to you promptly to schedule a free on-site consultation at your convenience.',
   },
 ];
 
@@ -281,9 +281,9 @@ export const businessInfo = {
   shortName: 'ABC Landscaping',
   tagline: 'Interlocking \u2022 Retaining Walls \u2022 Excavation',
   owner: 'Karter',
-  phone: '343-333-0580',
-  phoneFormatted: '(343) 333-0580',
-  phoneHref: 'tel:+13433330580',
+  phone: '343-580-0908',
+  phoneFormatted: '(343) 580-0908',
+  phoneHref: 'tel:+13435800908',
   email: 'karter@abclandscaping.xyz',
   address: 'Bowmanville, Ontario',
 };
