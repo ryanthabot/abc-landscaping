@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/logo.png"
-                alt="Landscape Designs Ontario"
+                alt="ABC Landscaping"
                 width={200}
                 height={44}
                 className="h-14 w-auto"
@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <TreePine className="w-4 h-4 text-primary" />
-              <span>Owner-operated by Jerome</span>
+              <span>Owner-operated by Karter</span>
             </div>
           </div>
 
@@ -70,13 +70,13 @@ export default function Footer() {
               <li>
                 <a href={`tel:${businessInfo.phone}`} className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Phone className="w-4 h-4 text-primary" />
-                  (705) 772-1839
+                  (343) 333-0580
                 </a>
               </li>
               <li>
                 <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Mail className="w-4 h-4 text-primary" />
-                  landscapedesignsontario@gmail.com
+                  karter@abclandscaping.xyz
                 </a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground text-sm">
@@ -92,7 +92,7 @@ export default function Footer() {
       <div className="border-t border-primary/5">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Landscape Designs Ontario. All rights reserved.
+            © {currentYear} A Better Choice Landscaping. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#portfolio" className="text-muted-foreground text-sm hover:text-primary transition-colors">

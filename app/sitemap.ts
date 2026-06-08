@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://landscapedesignsontario.com';
+  const baseUrl = 'https://abclandscaping.xyz';
 
   return [
     {

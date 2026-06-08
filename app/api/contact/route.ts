@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
             </div>
           </div>
           <p style="text-align: center; color: #9ca3af; font-size: 12px; margin-top: 12px;">
-            Sent from Landscape Designs Ontario website
+            Sent from A Better Choice Landscaping website
           </p>
         </div>
       `,
@@ -74,8 +74,8 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
-      replyTo: 'landscapedesignsontario@gmail.com',
-      subject: 'Thanks for reaching out! — Landscape Designs Ontario',
+      replyTo: 'karter@abclandscaping.xyz',
+      subject: 'Thanks for reaching out! — ABC Landscaping',
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a;">
           <div style="background: #16a34a; padding: 24px; border-radius: 12px 12px 0 0; text-align: center;">
@@ -83,22 +83,22 @@ export async function POST(req: NextRequest) {
           </div>
           <div style="padding: 24px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 12px 12px;">
             <p style="font-size: 16px; line-height: 1.6;">
-              We received your quote request for <strong>${service}</strong>. Jerome will review your project details and get back to you within <strong>24 hours</strong>.
+              We received your quote request for <strong>${service}</strong>. Karter will review your project details and get back to you within <strong>24 hours</strong>.
             </p>
             <div style="background: #f9fafb; padding: 16px; border-radius: 8px; margin: 16px 0;">
               <p style="margin: 0 0 8px 0; font-weight: 600; color: #374151;">What happens next?</p>
               <ol style="margin: 0; padding-left: 20px; color: #6b7280; line-height: 1.8;">
-                <li>Jerome reviews your project details</li>
+                <li>Karter reviews your project details</li>
                 <li>We reach out to schedule a free on-site consultation</li>
                 <li>You receive a detailed, transparent quote</li>
               </ol>
             </div>
             <p style="font-size: 16px; line-height: 1.6;">
-              In the meantime, feel free to call or text Jerome directly at <a href="tel:7057721839" style="color: #16a34a; font-weight: 600;">(705) 772-1839</a>.
+              In the meantime, feel free to call or text Karter directly at <a href="tel:3433330580" style="color: #16a34a; font-weight: 600;">(343) 333-0580</a>.
             </p>
             <p style="color: #6b7280; margin-top: 24px;">
               Best regards,<br>
-              <strong style="color: #16a34a;">Landscape Designs Ontario</strong><br>
+              <strong style="color: #16a34a;">A Better Choice Landscaping</strong><br>
               <span style="font-size: 14px;">Bowmanville, Ontario</span>
             </p>
           </div>

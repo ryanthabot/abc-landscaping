@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://landscapedesignsontario.com/sitemap.xml',
+    sitemap: 'https://abclandscaping.xyz/sitemap.xml',
   };
 }

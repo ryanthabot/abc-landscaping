@@ -20,7 +20,7 @@ export default function About() {
     {
       icon: Users,
       title: 'Owner-Operated',
-      description: 'Jerome is on-site for every project, ensuring top-notch results.',
+      description: 'Karter is on-site for every project, ensuring top-notch results.',
     },
     {
       icon: Wrench,
@@ -49,7 +49,7 @@ export default function About() {
               <div className="rounded-[2rem] overflow-hidden shadow-xl aspect-[5/4] border border-primary/10">
                 <Image
                   src={aboutImage}
-                  alt="Jerome - Landscape Designs Ontario owner and operator"
+                  alt="Karter - A Better Choice Landscaping owner and operator"
                   fill
                   className="object-cover"
                   suppressHydrationWarning
@@ -91,17 +91,19 @@ export default function About() {
             </h2>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Hi, I am Jerome — owner and operator of Landscape Designs Ontario. 
-              I started this business with a simple belief: every property deserves 
-              outdoor spaces that are as functional as they are beautiful.
+              Hi, I am Karter — owner and operator of A Better Choice Landscaping.
+              After working for many companies and seeing their pricing and their standards,
+              we decided to create our own with better, more honest pricing. We believe
+              every property deserves outdoor spaces that are as functional as they are
+              beautiful — without the inflated price tag.
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              With over a decade of experience in interlocking, retaining walls, 
-              and excavation, I take personal pride in every project we take on. 
-              When you hire us, you get me — on-site, hands-on, from start to finish. 
-              No subcontractors, no runaround. Just honest craftsmanship and results 
-              that speak for themselves.
+              With years of experience in interlocking, retaining walls,
+              and excavation, we take personal pride in every project we take on.
+              When you hire us, you get us — on-site, hands-on, from start to finish.
+              No subcontractors, no runaround. Just honest craftsmanship, fair pricing,
+              and results that speak for themselves.
             </p>
 
             {/* Values grid */}

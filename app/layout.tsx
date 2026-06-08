@@ -25,9 +25,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Landscape Designs Ontario — Transforming Outdoor Spaces",
+  title: "ABC Landscaping — Transforming Outdoor Spaces",
   description:
-    "Professional interlocking, retaining walls, and excavation services across Bowmanville, Durham Region, and Toronto. Free estimates. Call 705-772-1839.",
+    "Professional interlocking, retaining walls, and excavation services across Bowmanville, Durham Region, and Toronto. Free estimates. Call 343-333-0580.",
 };
 
 export default function RootLayout({

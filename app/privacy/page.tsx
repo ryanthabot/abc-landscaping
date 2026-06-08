@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Landscape Designs Ontario',
-  description: 'Privacy policy for Landscape Designs Ontario. Learn how we collect, use, and protect your personal information.',
+  title: 'Privacy Policy — ABC Landscaping',
+  description: 'Privacy policy for A Better Choice Landscaping. Learn how we collect, use, and protect your personal information.',
 };
 
 export default function PrivacyPolicy() {
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
               Introduction
             </h2>
             <p>
-              Landscape Designs Ontario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard information when you visit our website or contact us for services.
+              A Better Choice Landscaping (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard information when you visit our website or contact us for services.
             </p>
           </section>
 
@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
               All personal information submitted through our contact form is delivered directly to our company email and stored only within our email system. We do not use a database, CRM, or third-party storage service to retain your information.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>Form submissions are sent directly to Jerome via email</li>
+              <li>Form submissions are sent directly to Karter via email</li>
               <li>An automatic confirmation email is sent to you for your records</li>
               <li>No data is stored on our web servers beyond the email delivery</li>
               <li>Email communications are protected by our email provider&apos;s security measures</li>
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
               We Do Not Sell Your Information
             </h2>
             <p>
-              We will <strong>never</strong> sell, rent, trade, or share your personal information with third parties for their marketing purposes. Your information is used exclusively by Landscape Designs Ontario to respond to your inquiry and provide the services you&apos;ve requested.
+              We will <strong>never</strong> sell, rent, trade, or share your personal information with third parties for their marketing purposes. Your information is used exclusively by A Better Choice Landscaping to respond to your inquiry and provide the services you&apos;ve requested.
             </p>
           </section>
 
@@ -136,12 +136,12 @@ export default function PrivacyPolicy() {
             </ul>
             <p className="mt-4">
               To exercise any of these rights, please contact us at{' '}
-              <a href="mailto:landscapedesignsontario@gmail.com" className="text-primary hover:underline font-medium">
-                landscapedesignsontario@gmail.com
+              <a href="mailto:karter@abclandscaping.xyz" className="text-primary hover:underline font-medium">
+                karter@abclandscaping.xyz
               </a>{' '}
               or call{' '}
-              <a href="tel:7057721839" className="text-primary hover:underline font-medium">
-                (705) 772-1839
+              <a href="tel:3433330580" className="text-primary hover:underline font-medium">
+                (343) 333-0580
               </a>.
             </p>
           </section>
@@ -172,18 +172,18 @@ export default function PrivacyPolicy() {
               If you have any questions or concerns about this Privacy Policy or how your information is handled, please reach out:
             </p>
             <div className="mt-4 bg-primary/5 rounded-2xl p-6 space-y-2">
-              <p className="font-heading font-bold text-foreground">Landscape Designs Ontario</p>
-              <p className="text-muted-foreground">Operated by Jerome</p>
+              <p className="font-heading font-bold text-foreground">A Better Choice Landscaping</p>
+              <p className="text-muted-foreground">Operated by Karter</p>
               <p className="text-muted-foreground">
                 Email:{' '}
-                <a href="mailto:landscapedesignsontario@gmail.com" className="text-primary hover:underline">
-                  landscapedesignsontario@gmail.com
+                <a href="mailto:karter@abclandscaping.xyz" className="text-primary hover:underline">
+                  karter@abclandscaping.xyz
                 </a>
               </p>
               <p className="text-muted-foreground">
                 Phone:{' '}
-                <a href="tel:7057721839" className="text-primary hover:underline">
-                  (705) 772-1839
+                <a href="tel:3433330580" className="text-primary hover:underline">
+                  (343) 333-0580
                 </a>
               </p>
               <p className="text-muted-foreground">Serving Durham Region &amp; GTA, Ontario</p>

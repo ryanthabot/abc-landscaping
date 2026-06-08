@@ -47,7 +47,7 @@ export default function Header() {
       <div className="bg-primary text-primary-foreground text-sm py-2 px-4 text-center">
         <div className="container mx-auto flex items-center justify-center gap-2">
           <Phone className="w-3.5 h-3.5" />
-          <span>Call Jerome: </span>
+          <span>Call Karter: </span>
           <a href={businessInfo.phoneHref} className="font-semibold underline underline-offset-2 hover:no-underline">
             {businessInfo.phoneFormatted}
           </a>
@@ -75,7 +75,7 @@ export default function Header() {
           >
             <Image
               src="/images/logo.png"
-              alt="Landscape Designs Ontario"
+              alt="ABC Landscaping"
               width={56}
               height={56}
               className="hidden sm:block h-11 w-auto"
@@ -84,9 +84,8 @@ export default function Header() {
             />
             <div className="flex items-baseline gap-1">
               <span className="font-heading font-bold text-lg text-foreground leading-tight">
-                Landscape Designs
+                ABC Landscaping
               </span>
-              <span className="text-sm text-muted-foreground font-accent">Ontario</span>
             </div>
           </motion.a>
 
@@ -172,15 +171,14 @@ export default function Header() {
                   <div className="flex items-center gap-3">
                     <Image
                       src="/images/logo.png"
-                      alt="Landscape Designs Ontario"
+                      alt="ABC Landscaping"
                       width={40}
                       height={40}
                       className="h-10 w-auto"
                       suppressHydrationWarning
                     />
                     <div className="flex flex-col leading-tight">
-                      <span className="font-heading font-bold text-foreground">Landscape Designs</span>
-                      <span className="text-sm text-muted-foreground font-accent">Ontario</span>
+                      <span className="font-heading font-bold text-foreground">ABC Landscaping</span>
                     </div>
                   </div>
                   <button

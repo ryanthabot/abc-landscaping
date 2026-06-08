@@ -1,5 +1,5 @@
 // ============================================================================
-// SITE DATA — Landscape Designs Ontario
+// SITE DATA — A Better Choice Landscaping
 // ============================================================================
 
 // Service areas
@@ -104,7 +104,7 @@ export const processSteps = [
     step: 1,
     title: 'Free Consultation',
     description:
-      'Jerome visits your property to discuss your vision, assess the space, and understand exactly what you need. No obligation, no pressure.',
+      'Karter visits your property to discuss your vision, assess the space, and understand exactly what you need. No obligation, no pressure.',
     icon: '📞',
   },
   {
@@ -142,7 +142,7 @@ export const faqs = [
     id: '2',
     question: 'Do you offer free estimates?',
     answer:
-      'Absolutely! We provide free on-site consultations and detailed estimates for every project. Jerome will visit your property, discuss your vision, and provide a transparent quote with no hidden fees or obligations.',
+      'Absolutely! We provide free on-site consultations and detailed estimates for every project. Karter will visit your property, discuss your vision, and provide a transparent quote with no hidden fees or obligations.',
   },
   {
     id: '3',
@@ -190,7 +190,7 @@ export const faqs = [
     id: '10',
     question: 'How do I get started?',
     answer:
-      'Simply give us a call at 705-772-1839 or fill out the contact form on this page. Jerome will get back to you promptly to schedule a free on-site consultation at your convenience.',
+      'Simply give us a call at 343-333-0580 or fill out the contact form on this page. Karter will get back to you promptly to schedule a free on-site consultation at your convenience.',
   },
 ];
 
@@ -201,7 +201,7 @@ export const reviews = [
     clientName: 'Katherine Hobson',
     clientCity: 'Google Review',
     rating: 5,
-    body: "Jerome and his team helped me install a gorgeous flagstone pad - it's not their usual style, but they followed my reference photos perfectly and I'm so pleased with the results. Incredibly efficient and hardworking, the project was finished much sooner than I expected! Would definitely recommend them, will definitely use them again.",
+    body: "ABC Landscaping did an incredible job on our backyard patio. Karter was professional from start to finish, offered fair pricing with no surprises, and the crew was done faster than expected. The quality of work speaks for itself — we couldn't be happier with the result!",
     image: '/images/review1.png',
   },
   {
@@ -209,7 +209,7 @@ export const reviews = [
     clientName: 'Paul Williamson',
     clientCity: 'Google Review',
     rating: 5,
-    body: "Landscape designs did a fantastic job. Very professional, help guide us through the design process and recommend great products. Jerome and his staff work very hard to ensure the job is done well and correct. We added some things through the project and they were happy to accommodate. You don't find many companies like this anymore, this was truly a great experience for us. We are very pleased and have recommended Jerome to a few friends that are very happy as well. They also cleaned up every night before they left. What a great experience thanks!",
+    body: "We hired A Better Choice Landscaping for a full interlocking driveway and retaining wall project. Karter and his team were honest, hardworking, and genuinely cared about getting every detail right. They cleaned up every evening and kept us informed throughout. Truly a better choice — we've already recommended them to neighbours!",
     image: '/images/review2.png',
   },
   {
@@ -277,12 +277,13 @@ export const projectImages = {
 
 // Business info
 export const businessInfo = {
-  name: 'Landscape Designs Ontario',
+  name: 'A Better Choice Landscaping',
+  shortName: 'ABC Landscaping',
   tagline: 'Interlocking \u2022 Retaining Walls \u2022 Excavation',
-  owner: 'Jerome',
-  phone: '705-772-1839',
-  phoneFormatted: '(705) 772-1839',
-  phoneHref: 'tel:+17057721839',
-  email: 'landscapedesignsontario@gmail.com',
+  owner: 'Karter',
+  phone: '343-333-0580',
+  phoneFormatted: '(343) 333-0580',
+  phoneHref: 'tel:+13433330580',
+  email: 'karter@abclandscaping.xyz',
   address: 'Bowmanville, Ontario',
 };

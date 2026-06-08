@@ -11,7 +11,7 @@ export default function JsonLd() {
     image: '/images/gallery_image_16.jpg',
     telephone: businessInfo.phone,
     email: businessInfo.email,
-    url: 'https://landscapedesignsontario.com',
+    url: 'https://abclandscaping.xyz',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Bowmanville',
@@ -61,10 +61,10 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: businessInfo.name,
-    url: 'https://landscapedesignsontario.com',
+    url: 'https://abclandscaping.xyz',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://landscapedesignsontario.com/?q={search_term_string}',
+      target: 'https://abclandscaping.xyz/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

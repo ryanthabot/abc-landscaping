@@ -112,7 +112,7 @@ export default function Hero() {
               <div className="w-full aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl border border-primary/10">
                 <Image
                   src={heroImage}
-                  alt="Landscape Designs Ontario project showcase"
+                  alt="ABC Landscaping project showcase"
                   fill
                   className="object-cover"
                   priority
