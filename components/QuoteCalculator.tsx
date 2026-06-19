@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Phone, Mail, MapPin, CheckCircle, Loader2 } from 'lucide-react';
-import { services, allServiceAreas } from '@/lib/data';
+import { services, allServiceAreas, businessInfo } from '@/lib/data';
 
 export default function QuoteCalculator() {
   const [submitted, setSubmitted] = useState(false);
@@ -73,7 +73,7 @@ export default function QuoteCalculator() {
               Ready for a <span className="text-primary">Free Estimate</span>?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Tell us about your project and Karter will get back to you within 24 hours with a free, no-obligation quote.
+              Tell us about your project and Kevin will get back to you within 24 hours with a free, no-obligation quote.
             </p>
 
             {/* Contact Info */}
@@ -88,13 +88,13 @@ export default function QuoteCalculator() {
                 </div>
               </a>
 
-              <a href="mailto:karter@abclandscaping.xyz" className="flex items-center gap-4 group">
+              <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors">
                   <Mail className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-heading font-semibold text-foreground text-sm">karter@abclandscaping.xyz</p>
+                  <p className="font-heading font-semibold text-foreground text-sm">{businessInfo.email}</p>
                 </div>
               </a>
 
@@ -268,7 +268,7 @@ export default function QuoteCalculator() {
                     Request Sent!
                   </h3>
                   <p className="text-muted-foreground mb-2">
-                    Karter will be in touch within 24 hours.
+                    Kevin will be in touch within 24 hours.
                   </p>
                   <p className="text-sm text-muted-foreground/70 mb-6">
                     💡 Please check your spam/junk folder if you don&apos;t see our confirmation email.

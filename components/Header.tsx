@@ -47,7 +47,7 @@ export default function Header() {
       <div className="bg-primary text-primary-foreground text-sm py-2 px-4 text-center">
         <div className="container mx-auto flex items-center justify-center gap-2">
           <Phone className="w-3.5 h-3.5" />
-          <span>Call Karter: </span>
+          <span>Call Kevin: </span>
           <a href={businessInfo.phoneHref} className="font-semibold underline underline-offset-2 hover:no-underline">
             {businessInfo.phoneFormatted}
           </a>

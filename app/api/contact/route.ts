@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
-      replyTo: 'karter@abclandscaping.xyz',
+      replyTo: 'kevin@abclandscaping.xyz',
       subject: 'Thanks for reaching out! — ABC Landscaping',
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #1a1a1a;">
@@ -83,18 +83,18 @@ export async function POST(req: NextRequest) {
           </div>
           <div style="padding: 24px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 12px 12px;">
             <p style="font-size: 16px; line-height: 1.6;">
-              We received your quote request for <strong>${service}</strong>. Karter will review your project details and get back to you within <strong>24 hours</strong>.
+              We received your quote request for <strong>${service}</strong>. Kevin will review your project details and get back to you within <strong>24 hours</strong>.
             </p>
             <div style="background: #f9fafb; padding: 16px; border-radius: 8px; margin: 16px 0;">
               <p style="margin: 0 0 8px 0; font-weight: 600; color: #374151;">What happens next?</p>
               <ol style="margin: 0; padding-left: 20px; color: #6b7280; line-height: 1.8;">
-                <li>Karter reviews your project details</li>
+                <li>Kevin reviews your project details</li>
                 <li>We reach out to schedule a free on-site consultation</li>
                 <li>You receive a detailed, transparent quote</li>
               </ol>
             </div>
             <p style="font-size: 16px; line-height: 1.6;">
-              In the meantime, feel free to call or text Karter directly at <a href="tel:3435800908" style="color: #16a34a; font-weight: 600;">(343) 580-0908</a>.
+              In the meantime, feel free to call or text Kevin directly at <a href="tel:3435800908" style="color: #16a34a; font-weight: 600;">(343) 580-0908</a>.
             </p>
             <p style="color: #6b7280; margin-top: 24px;">
               Best regards,<br>

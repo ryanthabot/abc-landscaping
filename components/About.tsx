@@ -20,7 +20,7 @@ export default function About() {
     {
       icon: Users,
       title: 'Owner-Operated',
-      description: 'Karter is on-site for every project, ensuring top-notch results.',
+      description: 'Kevin & Cory are on-site for every project, ensuring top-notch results.',
     },
     {
       icon: Wrench,
@@ -49,7 +49,7 @@ export default function About() {
               <div className="rounded-[2rem] overflow-hidden shadow-xl aspect-[5/4] border border-primary/10">
                 <Image
                   src={aboutImage}
-                  alt="Karter - A Better Choice Landscaping owner and operator"
+                  alt="Kevin - A Better Choice Landscaping owner and operator"
                   fill
                   className="object-cover"
                   suppressHydrationWarning
@@ -91,9 +91,9 @@ export default function About() {
             </h2>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Hi, I am Karter — owner and operator of A Better Choice Landscaping.
-              After working for many companies and seeing their pricing and their standards,
-              we decided to create our own with better, more honest pricing. We believe
+              Hi, I am Kevin — owner and operator of A Better Choice Landscaping.
+              My partner Cory and I, after working for many companies and seeing their pricing and their standards,
+              decided to create our own with better, more honest pricing. We believe
               every property deserves outdoor spaces that are as functional as they are
               beautiful — without the inflated price tag.
             </p>

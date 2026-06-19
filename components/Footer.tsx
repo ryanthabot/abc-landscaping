@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <TreePine className="w-4 h-4 text-primary" />
-              <span>Owner-operated by Karter</span>
+              <span>Owner-operated by Kevin &amp; Cory</span>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
               <li>
                 <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-2 text-muted-foreground text-sm hover:text-primary transition-colors">
                   <Mail className="w-4 h-4 text-primary" />
-                  karter@abclandscaping.xyz
+                  {businessInfo.email}
                 </a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground text-sm">

@@ -23,7 +23,7 @@ export default function Contact() {
             Let&apos;s Build Something <span className="text-primary">Great</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Serving the Durham Region and GTA with pride. Contact Karter directly for a free estimate.
+            Serving the Durham Region and GTA with pride. Contact Kevin directly for a free estimate.
           </p>
         </motion.div>
 
@@ -41,7 +41,7 @@ export default function Contact() {
               <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
             </div>
             <h3 className="font-heading font-bold text-foreground mb-1">Call or Text</h3>
-            <p className="text-primary font-semibold">(705) 772-1839</p>
+            <p className="text-primary font-semibold">{businessInfo.phoneFormatted}</p>
           </motion.a>
 
           {/* Email */}

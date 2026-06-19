@@ -104,7 +104,7 @@ export const processSteps = [
     step: 1,
     title: 'Free Consultation',
     description:
-      'Karter visits your property to discuss your vision, assess the space, and understand exactly what you need. No obligation, no pressure.',
+      'Kevin visits your property to discuss your vision, assess the space, and understand exactly what you need. No obligation, no pressure.',
     icon: '📞',
   },
   {
@@ -142,7 +142,7 @@ export const faqs = [
     id: '2',
     question: 'Do you offer free estimates?',
     answer:
-      'Absolutely! We provide free on-site consultations and detailed estimates for every project. Karter will visit your property, discuss your vision, and provide a transparent quote with no hidden fees or obligations.',
+      'Absolutely! We provide free on-site consultations and detailed estimates for every project. Kevin will visit your property, discuss your vision, and provide a transparent quote with no hidden fees or obligations.',
   },
   {
     id: '3',
@@ -190,7 +190,7 @@ export const faqs = [
     id: '10',
     question: 'How do I get started?',
     answer:
-      'Simply give us a call at 343-580-0908 or fill out the contact form on this page. Karter will get back to you promptly to schedule a free on-site consultation at your convenience.',
+      'Simply give us a call at 343-580-0908 or fill out the contact form on this page. Kevin will get back to you promptly to schedule a free on-site consultation at your convenience.',
   },
 ];
 
@@ -201,7 +201,7 @@ export const reviews = [
     clientName: 'Katherine Hobson',
     clientCity: 'Google Review',
     rating: 5,
-    body: "ABC Landscaping did an incredible job on our backyard patio. Karter was professional from start to finish, offered fair pricing with no surprises, and the crew was done faster than expected. The quality of work speaks for itself — we couldn't be happier with the result!",
+    body: "ABC Landscaping did an incredible job on our backyard patio. Kevin was professional from start to finish, offered fair pricing with no surprises, and the crew was done faster than expected. The quality of work speaks for itself — we couldn't be happier with the result!",
     image: '/images/review1.png',
   },
   {
@@ -209,7 +209,7 @@ export const reviews = [
     clientName: 'Paul Williamson',
     clientCity: 'Google Review',
     rating: 5,
-    body: "We hired A Better Choice Landscaping for a full interlocking driveway and retaining wall project. Karter and his team were honest, hardworking, and genuinely cared about getting every detail right. They cleaned up every evening and kept us informed throughout. Truly a better choice — we've already recommended them to neighbours!",
+    body: "We hired A Better Choice Landscaping for a full interlocking driveway and retaining wall project. Kevin and his team were honest, hardworking, and genuinely cared about getting every detail right. They cleaned up every evening and kept us informed throughout. Truly a better choice — we've already recommended them to neighbours!",
     image: '/images/review2.png',
   },
   {
@@ -280,10 +280,10 @@ export const businessInfo = {
   name: 'A Better Choice Landscaping',
   shortName: 'ABC Landscaping',
   tagline: 'Interlocking \u2022 Retaining Walls \u2022 Excavation',
-  owner: 'Karter',
+  owner: 'Kevin & Cory',
   phone: '343-580-0908',
   phoneFormatted: '(343) 580-0908',
   phoneHref: 'tel:+13435800908',
-  email: 'karter@abclandscaping.xyz',
+  email: 'kevin@abclandscaping.xyz',
   address: 'Bowmanville, Ontario',
 };

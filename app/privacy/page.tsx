@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
               All personal information submitted through our contact form is delivered directly to our company email and stored only within our email system. We do not use a database, CRM, or third-party storage service to retain your information.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>Form submissions are sent directly to Karter via email</li>
+              <li>Form submissions are sent directly to Kevin via email</li>
               <li>An automatic confirmation email is sent to you for your records</li>
               <li>No data is stored on our web servers beyond the email delivery</li>
               <li>Email communications are protected by our email provider&apos;s security measures</li>
@@ -136,8 +136,8 @@ export default function PrivacyPolicy() {
             </ul>
             <p className="mt-4">
               To exercise any of these rights, please contact us at{' '}
-              <a href="mailto:karter@abclandscaping.xyz" className="text-primary hover:underline font-medium">
-                karter@abclandscaping.xyz
+              <a href="mailto:kevin@abclandscaping.xyz" className="text-primary hover:underline font-medium">
+                kevin@abclandscaping.xyz
               </a>{' '}
               or call{' '}
               <a href="tel:3435800908" className="text-primary hover:underline font-medium">
@@ -173,11 +173,11 @@ export default function PrivacyPolicy() {
             </p>
             <div className="mt-4 bg-primary/5 rounded-2xl p-6 space-y-2">
               <p className="font-heading font-bold text-foreground">A Better Choice Landscaping</p>
-              <p className="text-muted-foreground">Operated by Karter</p>
+              <p className="text-muted-foreground">Operated by Kevin &amp; Cory</p>
               <p className="text-muted-foreground">
                 Email:{' '}
-                <a href="mailto:karter@abclandscaping.xyz" className="text-primary hover:underline">
-                  karter@abclandscaping.xyz
+                <a href="mailto:kevin@abclandscaping.xyz" className="text-primary hover:underline">
+                  kevin@abclandscaping.xyz
                 </a>
               </p>
               <p className="text-muted-foreground">
